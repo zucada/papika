@@ -103,10 +103,15 @@ input:checked + .slider:before {
 
 .hello {
     position: absolute;
-    top: 75%;
-    left: 51%;
+    top: 60%;
+    left: 44%;
     transform: translate(-50%, -50%);
     width: 250px;
+}
+
+
+.hello {
+    animation: rotating 2s linear infinite;
 }
 
 @keyframes infinite {
@@ -120,5 +125,20 @@ input:checked + .slider:before {
 
     100% {
         background-position: 100%;
+    }
+}
+
+@keyframes rotating {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+
+    100%  {
+        transform: rotate(0);
     }
 }
