@@ -134,7 +134,7 @@ input:checked + .slider:before {
 .kuromi {
     position: absolute;
     top: 65%;
-    left: 37%;
+    left: 35%;
     width: 180px;
 }
 
