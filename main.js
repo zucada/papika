@@ -6,6 +6,7 @@ const title = document.querySelector('.title')
 const kitty = document.querySelector('.hello')
 const pompom = document.querySelector('.pompex')
 const pompom1 = document.querySelector('.pompex1')
+const audio = document.querySelector('.audio')
 
 
 toggle.addEventListener('click', () => {
@@ -20,6 +21,7 @@ toggle.addEventListener('click', () => {
         addKitty()
         addPompex()
         addPompex1()
+        playSong()
     }
         else {
             fundo.classList.add('apagado')
@@ -27,9 +29,26 @@ toggle.addEventListener('click', () => {
             removeKitty()
             removePompex()
             removePompex1()
+            pauseSong()
         }
     
 })
+
+// audio.addEventListener('ended', replay())
+
+// function replay() {
+//     audio.loop = true
+// }
+
+function playSong() {
+    audio.play()
+    audio.volume = 0.5
+
+}
+
+function pauseSong() {
+    audio.pause()
+}
 
 function removePompex() {
     pompom.src = ''
