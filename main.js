@@ -7,6 +7,11 @@ const kitty = document.querySelector('.hello')
 const pompom = document.querySelector('.pompex')
 const pompom1 = document.querySelector('.pompex1')
 const audio = document.querySelector('.audio')
+const cinna = document.querySelector('.cinna')
+const keroppi = document.querySelector('.keroppi')
+const melody = document.querySelector('.melody')
+const kuromi = document.querySelector('.kuromi')
+const padre = document.querySelector('.parent')
 
 
 toggle.addEventListener('click', () => {
@@ -22,6 +27,7 @@ toggle.addEventListener('click', () => {
         addPompex()
         addPompex1()
         playSong()
+        change()
     }
         else {
             fundo.classList.add('apagado')
@@ -30,6 +36,7 @@ toggle.addEventListener('click', () => {
             removePompex()
             removePompex1()
             pauseSong()
+            remove()
         }
     
 })
@@ -48,6 +55,14 @@ function playSong() {
 
 function pauseSong() {
     audio.pause()
+}
+
+function change() {
+    padre.style.opacity = "1"
+}
+
+function remove() {
+    padre.style.opacity = "0"
 }
 
 function removePompex() {
