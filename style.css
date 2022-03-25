@@ -2,6 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+}
+
+.parent {
+    opacity: 0;
 }
 
 .pompom {
@@ -111,6 +116,35 @@ input:checked + .slider:before {
     transform: translateX(70px);
 }
 
+.cinna {
+    position: absolute;
+    top: 10px;
+    width: 300px;
+    right: -10%;
+    animation: cinna 10s linear infinite;
+}
+
+.keroppi {
+    width: 300px;
+    position: absolute;
+    top: 69%;
+    left: 53%;
+}
+
+.kuromi {
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    width: 180px;
+}
+
+.melody {
+    position: absolute;
+    top: 67%;
+    width: 185px;
+    left: 65%;
+}
+
 .hello {
     position: absolute;
     top: 60%;
@@ -153,3 +187,12 @@ input:checked + .slider:before {
     }
 }
 
+@keyframes cinna {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-900%)
+    }
+}
