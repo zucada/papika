@@ -142,7 +142,7 @@ input:checked + .slider:before {
     position: absolute;
     top: 67%;
     width: 185px;
-    left: 65%;
+    left: 67%;
 }
 
 .hello {
