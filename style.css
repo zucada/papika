@@ -29,6 +29,7 @@
     height: 669px;
     background-color: black;
     z-index: 20;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7), -5px -5px 20px  rgba(0, 0, 0, 0.9);
 }
 
 
@@ -80,6 +81,10 @@
     border-radius: 10px;
 }
 
+.slider:hover {
+    background-color: rgb(24, 24, 24);
+}
+
 .slider:before {
     content: "";
     position: absolute;
@@ -93,8 +98,13 @@
 }
 
 input:checked + .slider {
-    background-color: pink;
-    box-shadow: 0 0 12px pink;
+    background-color: rgb(235, 127, 145);
+    box-shadow: 0 0 12px rgb(247, 120, 141);
+}
+
+input:checked + .slider:hover {
+    background-color: rgb(226, 55, 84);
+    box-shadow: 0 0 12px rgb(243, 66, 96);
 }
 
 input:checked + .slider:before {
@@ -142,3 +152,4 @@ input:checked + .slider:before {
         transform: rotate(0);
     }
 }
+
